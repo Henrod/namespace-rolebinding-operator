@@ -5,7 +5,7 @@ IMAGE := treacher/$(OPERATOR_NAME)
 .PHONY: install_deps build build-image
 
 install_deps:
-	glide install
+	dep ensure
 
 build:
 	rm -rf bin/%/$(OPERATOR_NAME)
